@@ -1,0 +1,25 @@
+{
+    "name": "bladeformatter",
+    "version": "1.0.0",
+    "description": "Formatter for Blade.",
+    "main": "src/main.js",
+    "repository": "https://github.com/ZafarRY/blade-formatter-acode.git",
+    "author": "ZafarRY",
+    "license": "MIT",
+    "dependencies": {
+        "@prettier/plugin-php": "^0.24.0",
+        "acode-plugin-types": "^1.11.7-patch.2",
+        "html-tag-js": "^2.4.15",
+        "prettier": "^3.8.4",
+        "prettier-plugin-blade": "^3.1.6"
+    },
+    "devDependencies": {
+        "esbuild": "^0.25.8",
+        "jszip": "^3.10.1"
+    },
+    "scripts": {
+        "dev": "node esbuild.config.mjs --serve",
+        "build": "node esbuild.config.mjs"
+    },
+    "browserslist": "cover 100%,not android < 5"
+}
